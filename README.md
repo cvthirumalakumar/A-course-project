@@ -17,5 +17,5 @@ We compare WERs of natural and synthetic audios tested on
     * Selected text for male and female TTS and the code used for generating synthetic data are in `synthetic_data_generation` folder.
  
 #### Pitch Modification
-* Code used for pitch modification is in `pitch_modification' folder.
+* Code used for pitch modification is in `pitch_modification` folder.
 
