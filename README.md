@@ -10,4 +10,5 @@ We compare WERs of natural and synthetic audios tested on
 * ASR trained on pitch modified version of Natural+Synthetic data
 
 ###Data
+We have used Microsoft Telugu 40Hrs speech data set for the experiments.
 
