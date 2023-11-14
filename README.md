@@ -10,14 +10,14 @@ We compare WERs of natural and synthetic audios tested on
 * ASR trained on pitch modified version of Natural+Synthetic data
 
 ### Data
-* Experiments are conducted for Telugu language.
+Experiments are conducted for Telugu language.
 #### Natural data
-* We have used [Microsoft Telugu 40Hrs speech data](https://www.microsoft.com/en-us/download/details.aspx?id=105292) set as natural data for the experiments.
+We have used [Microsoft Telugu 40Hrs speech data](https://www.microsoft.com/en-us/download/details.aspx?id=105292) set as natural data for the experiments.
 #### Synthetic data
-* Generated synthetic samples using [Indic-TTS](https://github.com/AI4Bharat/Indic-TTS) for sentences selected from Ai4Bharat text obtained from [Vakyansh repo](https://github.com/Open-Speech-EkStep/vakyansh-models).
+Generated synthetic samples using [Indic-TTS](https://github.com/AI4Bharat/Indic-TTS) for sentences selected from Ai4Bharat text obtained from [Vakyansh repo](https://github.com/Open-Speech-EkStep/vakyansh-models).
     * Number of sentences are equal to that of Microsoft data.
     * Selected text for male and female TTS and the code used for generating synthetic data are in `synthetic_data_generation` folder.
 
 #### Pitch Modification
-* Code used for pitch modification is in `pitch_modification` folder.
+Code used for pitch modification is in `pitch_modification` folder.
 
