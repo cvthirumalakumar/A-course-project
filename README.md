@@ -15,4 +15,7 @@ We compare WERs of natural and synthetic audios tested on
 * Generated synthetic samples using [Indic-TTS](https://github.com/AI4Bharat/Indic-TTS) for sentences selected from Ai4Bharat text obtained from [Vakyansh repo](https://github.com/Open-Speech-EkStep/vakyansh-models).
     * Number of sentences are equal to that of Microsoft data.
     * Selected text for male and female TTS and the code used for generating synthetic data are in `synthetic_data_generation` folder.
+ 
+#### Pitch Modification
+* Code used for pitch modification is in `pitch_modification' folder.
 
