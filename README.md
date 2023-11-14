@@ -21,3 +21,7 @@ Generated synthetic samples using [Indic-TTS](https://github.com/AI4Bharat/Indic
 #### Pitch Modification
 Code used for pitch modification is in `pitch_modification` folder.
 
+### Experimental setup
+* We have used Kaldi frame work to train ASR, training recipe is adapted from Librispeech recipe.
+* Code used for ASR training and testing is in `kaldi_asr` folder.
+
