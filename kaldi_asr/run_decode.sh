@@ -42,7 +42,7 @@ for lmtype in $lmtags;do
     echo =========================== $lmtype ===========================
     graph_dir=$dir/graph${lmtype:+_$lmtype}
 
-    # utils/mkgraph.sh --self-loop-scale 1.0 --remove-oov ${data_folder}/lang_test_${lmtype} $dir $graph_dir
+    utils/mkgraph.sh --self-loop-scale 1.0 --remove-oov ${data_folder}/lang_test_${lmtype} $dir $graph_dir
 
     for decode_set in $test_sets; do
         steps/nnet3/decode.sh --use-gpu false --acwt 1.0 --post-decode-acwt 10.0 --nj 1 --num-threads 4 \

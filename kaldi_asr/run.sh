@@ -2,7 +2,7 @@
 
 
 mfccdir=mfcc
-stage=2
+stage=1
 
 . ./cmd.sh
 . ./path.sh
@@ -15,18 +15,18 @@ clear
 
 if [ $stage -le 1 ]; then
   echo "----------------Prapring lang folder----------------"
-  #rm -r data/local/lang_tmp
+  rm -r data/local/lang_tmp
   utils/prepare_lang.sh data/local/dict_2l_MST \
    "<unk>" data/local/lang_tmp data/lang_min
 fi
 
 if [ $stage -le 2 ]; then
-#   # Create ConstArpaLm format language model for full 3-gram and 4-gram LMs
-#   echo "----------------formatting lms and ConstArpalms----------------"
-#   local/prepare_lms.sh  
+  # Create ConstArpaLm format language model for full 3-gram and 4-gram LMs
+  echo "----------------formatting lms and ConstArpalms----------------"
+  local/prepare_lms.sh  
 
-    utils/build_const_arpa_lm.sh data/local/lms/lmExtraTextMSTrainTextLarge.arpa.gz \
-      data/lang_min data/lang_test_lmExtraTextMSTrainTextLarge
+  utils/build_const_arpa_lm.sh data/local/lms/lmExtraTextMSTrainTextLarge.arpa.gz \
+    data/lang_min data/lang_test_lmExtraTextMSTrainTextLarge
  fi
 exit
 
@@ -89,7 +89,7 @@ if [ $stage -le 10 ]; then
 fi
 
 # if [ $stage -le 11 ]; then
-# echo "----------------Decoding using LDA+MLLT+SAT system----------------"
+#   echo "----------------Decoding using LDA+MLLT+SAT system----------------"
 #   utils/mkgraph.sh data/lang_test_lmSmall \
 #                    exp/tri3 exp/tri3/graph_lmSmall
 #   for test in test_msr; do
