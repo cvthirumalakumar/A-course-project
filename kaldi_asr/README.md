@@ -1,1 +1,4 @@
-
+1. Prepare the data and keep folder inside `data` folder
+2. Prepared dict folder and keep inside `data\local` folder
+3. Make changes in `run.sh` and dependent scripts accordingly
+4. run `run.sh`
