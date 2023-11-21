@@ -10,8 +10,10 @@
   
   conda activate tts-env
 * Install PyTorch
+  
   pip3 install -U torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
 * Install requirements of TTS
+  
   cd TTS
   
   pip3 install -e .[all]
