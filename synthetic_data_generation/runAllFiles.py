@@ -43,7 +43,7 @@ with open(transcript_file, 'r') as file:
             continue
         data.append({'name': a, 'text': b})
 
-print("len(data):",len(data))
+#print("len(data):",len(data))
 with Pool(20) as p:
     text_new = list(tqdm(p.imap_unordered(synthesize_text, data), total=len(data)))
 
