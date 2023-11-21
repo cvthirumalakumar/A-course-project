@@ -3,6 +3,7 @@
 #### 1. Setup TTS
 * Clone the github repo - https://github.com/gokulkarthik/text2speech
 * Create environment
+  
   sudo apt-get install libsndfile1-dev
   
   conda create -n tts-env
