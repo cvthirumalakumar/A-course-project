@@ -27,7 +27,7 @@
   pip3 install -r requirements.txt
 
 #### 2. Model Checkpoint
-Download the preferred language [TTS model checkpoints](https://github.com/AI4Bharat/Indic-TTS/releases/tag/v1-checkpoints-release) in your local directory and update the 'model_path' accordingly in runAllFiles.py
+* Download the preferred language [TTS model checkpoints](https://github.com/AI4Bharat/Indic-TTS/releases/tag/v1-checkpoints-release) in your local directory and update the 'model_path' accordingly in runAllFiles.py
 
 #### 3. Update transcript_file, gender, and out_path as per your usage.
 #### 4. Execute python3 runAllFiles.py
