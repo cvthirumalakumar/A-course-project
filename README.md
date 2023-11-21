@@ -25,3 +25,4 @@ Code used for pitch modification is in `pitch_modification` folder.
 * We have used Kaldi frame work to train ASR, training recipe is adapted from Librispeech recipe.
 * Code used for ASR training and testing is in `kaldi_asr` folder.
 * We have used [Unified Parser](https://www.iitm.ac.in/donlab/tts/unified.php) for generating pronunciation (Lexicon) and [KenLM](https://github.com/kpu/kenlm) for training Langauge Models.
+* Follow `README.md` in corresponding folders to run the code.
